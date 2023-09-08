@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="container">
+    {% for student in students %}
+    {% if student["student_no"] == student_no|int %}
+    <h1>Grades for {{student["name"]}}</h1>
+    {% endif %}
+    {% endfor %}
+    <table>
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Course</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for grade in grades %}
+            {% if grade["student_no"] == student_no|int  %} 
+            {% for course in courses %}
+            {% if grade["course_id"] == course["course_id"] %}
+            <tr>
+                <td>{{ grade["course_id"] }}</td>
+                <td>{{ course["name"] }}</td>
+                <td>{{ grade["grade"] }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<h1>Add Grade</h1>
+<form action="/add_grade" method="POST">
+    <input type="text" name="student" value={{student_no}} hidden>
+    <input type="submit" value="Add grade">
+</form>
+<br>
+<a href="/">Back to main</a>
+{% endblock %}

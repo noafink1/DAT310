@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif; 
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50em;  
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.header-icons {
+    margin-left: auto;
+}
+
+.entry, .edit {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    border: 5px solid #b6b6b6;
+    margin-bottom: 20px;
+}
+
+.entry h1, .edit h1 {
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
+
+.entry-div, .edit-div {
+    margin-bottom: 5px;
+} 
+
+.entry label, .edit label {
+    display: inline-block;
+    width: 80px;
+}
+
+.entry .material-icons, .edit .material-icons {
+    margin-left: auto;
+}
+
+.main-content {
+    border: 5px solid #b6b6b6;
+    padding: 10px;
+}
+
+.main-content .person-info {
+    display: flex;
+    flex-direction: column;
+    border: medium solid #858585;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.edit_container {
+    position: relative;
+    margin-left: auto;
+}
+
+.edit_container {
+    cursor: pointer;
+}
+
+.main-content h3 {
+    margin-top: -50px;
+}
+
+.del_container {
+    position: relative;
+    margin-left: auto;
+}
+
+.del_container:hover {
+    cursor: pointer;
+}

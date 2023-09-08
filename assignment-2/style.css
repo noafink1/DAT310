@@ -1,0 +1,97 @@
+/* write CSS here */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    font-family: Verdana, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#header {
+    background-color: royalblue;
+    border: 5px outset lightblue;
+}
+
+#header h1, #header h2{
+    color: white;
+    text-shadow: 2px 2px #333;
+}
+
+#header h1 {
+    margin-bottom: 0px;
+}
+
+#header h2 {
+    font-size: 1.2em;
+    font-family: 'Garamond', serif;
+    font-style: italic;
+    margin-top: 0px;
+}
+
+#content h2 {
+    border-bottom: 1px solid #999999;
+}
+
+.rank {
+    color: white;
+    background-color: black;
+}
+
+#content p {
+    text-align: justify;
+    text-indent: 2em;
+    color: #999999
+}
+
+#content p::first-line {
+    color: black;
+}
+
+#footer {
+    background-color: black;
+}
+
+#footer h2, #footer li, #footer a {
+    color: white;
+}
+
+#footer ul li {
+    list-style-type: circle;
+}
+
+#footer ul li:nth-child(1) {
+    list-style-type: disc;
+}
+
+#footer ul li:nth-child(2) {
+    list-style-type: disc;
+    font-weight: bold;
+}
+
+#footer p {
+    text-align: center;
+    color: yellow;
+    font-style: oblique;
+}
+

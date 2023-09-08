@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAT310 Assignment 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <input type="text" id="search-input" placeholder="Search">
+            <i class="material-icons">sort</i>
+            <select>
+                <option value="1">Email</option>
+                <option value="1">Tel</option>
+                <option value="1">Name</option>
+            </select>
+            <div class="header-icons">
+                <i class="material-icons">add</i>
+                <i class="material-icons">settings</i>
+            </div>
+        </div>
+
+        <div class="entry">
+            <i class="material-icons">close</i>
+            <h1>Add Entry</h1>
+            <form action="" name="entry-form">
+                <div class="entry-div">
+                  <label>Name</label>
+                  <input type="text" id="entryName"/>
+                </div>
+                <div class="entry-div">
+                  <label>Tel</label>
+                  <input type="text" id="entryTel"/>
+                </div>
+                <div class="entry-div">
+                  <label>Email</label>
+                  <input type="text" id="entryEmail"/>
+                </div>
+                <input type="submit" value="Add" id="addButton">
+              </form>
+        </div>
+
+        <div class="edit" id="edit">
+          <i class="material-icons">close</i>
+          <h1>Edit Entry</h1>
+          <form action="" name="edit-form">
+              <div class="edit-div">
+                <label>Name</label>
+                <input type="text" id="editName"/>
+              </div>
+              <div class="edit-div">
+                <label>Tel</label>
+                <input type="text" id="editTel"/>
+              </div>
+              <div class="edit-div">
+                <label>Email</label>
+                <input type="text" id="editEmail"/>
+              </div>
+              <input type="button" value="Confirm" id="editButton">
+            </form>
+      </div>
+
+        <div class="main-content" id="main_content">
+          <!-- Content gets created in script.js @ line: 75 -->
+        </div>
+    </div>
+</body>
+</html> 

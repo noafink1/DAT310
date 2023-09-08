@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>ElButikken</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <a href="index.html"><p>ElButikken</p></a>
+            </div>
+            <nav class="icons">
+                <ul>
+                    <li><a href="index.html"><i class="material-icons">home</i></a></li>
+                    <li><a href="product.html"><i class="material-icons">store</i></a></li>
+                    <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <main>
+                <h1>Cart</h1>
+                <table class="cart">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Color</th>
+                            <th>Count</th>
+                            <th>Item price</th>
+                            <th>Discount</th>
+                            <th>Price</th>
+                            <th>Cancel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MacBook Pro 2022</td>
+                            <td>Space Grey</td>
+                            <td>2</td>
+                            <td>29 490</td>
+                            <td>5%</td>
+                            <td>56 030</td>
+                            <td><button>x</button></td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 13 Pro Max</td>
+                            <td>Dark Blue</td>
+                            <td>1</td>
+                            <td>17 090</td>
+                            <td>0%</td>
+                            <td>17 090</td>
+                            <td><button>x</button></td>
+                        </tr>
+                        <tr>
+                            <td>Oculus Quest</td>
+                            <td>White</td>
+                            <td>3</td>
+                            <td>11 970</td>
+                            <td>20</td>
+                            <td>9576</td>
+                            <td><button>x</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1 id="checkout_header">Checkout</h1>
+                <div class="checkout">
+                    <fieldset>
+                        <legend>Billing Details</legend>
+                        <label>First Name <input type="text" name="first_name" id="first_name"></label>
+                        <label>Last Name <input type="text" name="last_name" id="last_name"></label>
+                        <label>Email <input type="text" name="email" id="email"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Delivery Adress</legend>
+                        <label>Street <input type="text" name="street" id="street"></label>
+                        <label>City <input type="text" name="city" id="city"></label>
+                        <label>Postcode <input type="text" name="postcode" id="postcode"></label>
+                    </fieldset>
+                    <fieldset id="terms">
+                        <legend>Submit Order</legend>
+                        <label>I agree to the general terms of service  <input type="checkbox" name="terms_of_service" id="terms_of_service"></label>
+                        <button>Submit</button>
+                    </fieldset>
+                </div>
+            </main>    
+        </div>
+       <footer>Customer Support: ︱ +4791665573 ︱<a href = "mailto: noa@finkenhagen.com">noa@finkenhagen.com</a></footer>
+    </body>
+</html>

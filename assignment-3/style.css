@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* index.html CSS */
+
+* {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Montserrat", sans-serif; 
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+header {
+    position: fixed;
+    background-color: #2c2c2e;
+    height: 40px;
+    width: 100%;
+}
+
+#logo {
+    font-size: 1.5rem;
+    display: flex;
+    height: 60px;
+    width: 10%;
+    margin-left: 5%;
+    background-color: #3a3a3a;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.icons {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 5%;
+    margin-top: 0.5rem;
+}
+
+.icons a {
+    color: white;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    background-color: white;
+    max-width: 1400px;
+    margin-bottom: 100px;
+}
+
+main h1 {
+    background-color: #f6f6f6;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.main_content {
+    padding-right: 20rem;
+}
+
+.main_content p {
+    padding: 5px;
+}
+
+#banner {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+}
+
+.main_content_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.main_content_div article {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+.main_content_div a, .main_content_div a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.main_pic {
+    width: 100%;
+    max-width: 280px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #e0e0e0;
+}
+
+.main_content_div img:hover {
+    border: 1px solid #2c2c2e;
+}
+
+#discount {
+    width: 25%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.price {
+    float: right;
+}
+
+aside {
+    color: white;
+    background-color: #3a3a3a;
+    float: right;
+    width: 300px;
+    height: 900px;
+    line-height: 30px;
+}
+
+aside h2, aside td {
+    padding: 5px;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+}
+
+aside a:hover {
+    color: #e0e0e0;
+}
+
+li {
+    display: inline;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #2c2c2c;
+    color: white;
+    height: 120px;
+    border-top: 5px solid #636366;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #2c2c2e;
+}
+
+/* product.html CSS */
+
+
+.div_product {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.div_product_info {
+    position: relative;
+    width: 45%;
+    margin-top: 40px;
+}
+
+.div_form {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.div_product_info input, .div_product_info select {
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.div_product_info select {
+    width: 40%;
+}
+
+.div_product, .product_details {
+    border: 1px solid #e0e0e0; 
+}
+
+#btn {
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: white;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: #636366;
+}
+
+
+#details {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #3a3a3a;
+    color: white;
+}
+
+.div_product img{
+    width: 50%;
+}
+
+/* cart.html CSS */
+
+.cart {
+    margin-top: 20px;
+    border: 1px solid #e0e0e0; 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cart th {
+    text-align: left;
+}
+
+.cart tr {
+    padding-top: 100px;
+}
+
+.cart thead {
+    font-weight: bold;
+}
+
+#checkout_header {
+    margin-bottom: 20px;
+}
+
+.checkout {
+    border: 1px solid #e0e0e0; 
+    padding: 20px;
+}
+
+.checkout fieldset {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.checkout legend {
+    font-weight: bold;
+}
+
+#terms {
+    display: flex;
+    justify-content: center;
+}
+
+#terms_of_service {
+    margin-right: 200px;
+}

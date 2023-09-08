@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="container">
+    <h1>Course {{ course_id }}</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Number</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            {% for grade in grades|sort(attribute='grade') %}
+            {% if course_id == grade['course_id'] %}
+            <tbody>
+                <tr>
+                    <td>{{ grade['student_no'] }}</td>
+                    <td>{{ grade['grade'] }}</td>
+                </tr>
+            </tbody>
+            {% endif %}
+            {% endfor %}
+        </table>
+    <h1>Summary</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Grade</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for grd in grade_count %}
+            {% if grd['count'] > 0 %}
+            <tr>
+                <td>{{ grd['grade'] }}</td>
+                <td>{{ grd['count'] }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Add Grade</h1>
+    <form action="/add_grade" method="POST">
+        <input type="text" name="course" value={{course_id}} hidden>
+        <input type="submit" value="Add grade">
+    </form>
+</div>
+<a href="/">Back to main</a>
+{% endblock %}

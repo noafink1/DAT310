@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noa Finkenhagen Assignment 5</title>
+    <script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        var app = Vue.createApp({
+            template: /*html*/`
+            <div class="cards">
+                <div v-for="card in cards" @click="flipCard(card)">
+                    <div class="front"><img width="150" heigth="150" src="images/pattern.png"></div>
+                    <div class="back"><img width="150" height="150" :src="'images/'+card.img"></div>
+                </div>
+            </div>
+            `,
+            data: function() {
+                return {
+                    cards: [
+                        { name: 'Messi', img: 'messi.jpeg' },
+                        { name: 'Ronaldo', img: 'ronaldo.jpeg' },
+                        { name: 'Haaland', img: 'haaland.jpeg' },
+                        { name: 'Neymar JR', img: 'neymar.jpeg' },
+                        { name: 'Mbappe', img: 'mbappe.jpeg' },
+                        { name: 'Odegaard', img: 'odegaard.jpg' }
+                    ],
+                }
+            },
+            methods: {
+                flipCard(card) {
+                    card.isFlipped = true;
+                }
+            }
+        });
+        app.mount("#app");
+    </script>
+</body>
+</html>

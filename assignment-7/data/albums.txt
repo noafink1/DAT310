@@ -1,0 +1,5 @@
+1	Kanye West	My Beatiful Dark Twisted Fantasy	KanyeWest_MBDTF.png
+2	Kid Cudi	Man On The Moon 2	KidCudi_ManOnTheMoon2.jpg
+3	Playboi Carti	Whole Lotta Red	PlayboiCarti_WholeLottaRed.png
+4	Travis Scott	ASTROWORLD	TravisScott_Astroworld.jpg
+5	Yeat	Up 2 Me	Yeat_Up2Me.png
